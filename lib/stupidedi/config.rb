@@ -99,6 +99,7 @@ module Stupidedi
         c.transaction_set.customize do |x|
           x.register("004010", "HP", "835") { Stupidedi::Versions::FunctionalGroups::FortyTen::TransactionSetDefs::HP835 }
           x.register("005010", "HN", "277") { Stupidedi::Versions::FunctionalGroups::FiftyTen::TransactionSetDefs::HN277 }
+          x.register("005010X212",   "HR", "276") { Versions::FunctionalGroups::FiftyTen::TransactionSetDefs::HR276 }
           x.register("005010", "BE", "834") { Stupidedi::Versions::FunctionalGroups::FiftyTen::TransactionSetDefs::BE834 }
           x.register("005010", "HP", "835") { Stupidedi::Versions::FunctionalGroups::FiftyTen::TransactionSetDefs::HP835 }
           x.register("005010", "HC", "837") { Stupidedi::Versions::FunctionalGroups::FiftyTen::TransactionSetDefs::HC837 }
