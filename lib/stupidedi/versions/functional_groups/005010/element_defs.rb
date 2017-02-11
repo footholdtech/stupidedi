@@ -343,6 +343,7 @@ module Stupidedi
             s::CodeList.build(
               "00" => "Original",
               "08" => "Status",
+              "13" => "Request",
               "15" => "Re-Submission",
               "18" => "Reissue",
               "22" => "Information Copy"))
@@ -984,6 +985,7 @@ module Stupidedi
           E1005 = t::ID.new(:E1005, "Hierarchical Structure Code"          , 4, 4,
             s::CodeList.build(
               "0019" => "Information Source, Subscriber, Dependent",
+              "0010" => "Information Source, Information Receiver, Provider of Service, Subscriber, Dependent",
               "0085" => "Information Source, Information Receiver, Provider of Service, Patient"))
 
           E1018 = t:: R.new(:E1018, "Exponent"                             , 1, 15)
