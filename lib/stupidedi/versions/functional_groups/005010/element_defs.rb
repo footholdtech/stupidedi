@@ -254,6 +254,7 @@ module Stupidedi
           E142  = t::AN.new(:E142 , "Application's Sender Code"            , 2, 15)
           E143  = t::ID.new(:E143 , "Transaction Set Identifier Number"    , 3, 3,
             s::CodeList.build(
+              "276" => "Health Care Claim Status Request",
               "277" => "Health Care Information Status Notification",
               "834" => "Benefit Enrollment and Maintenance",
               "835" => "Health Care Claim Payment/Advice",
