@@ -49,7 +49,8 @@ describe "Symbol#to_proc" do
     :call.to_proc.call(lambda{|*bs| bs.length }, *as).should == as.length
   end
 
-  pending "shortens the syntax when passing n-ary blocks" do
+  pending "shortens the syntax when passing n-ary blocks",
+    unless: RUBY_VERSION >= "2.4" || RUBY_PLATFORM == "java" do
     list = []
 
     # avert your eyes, lisp haters!

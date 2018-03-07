@@ -111,6 +111,7 @@ module Stupidedi
           x.register("005010X220",   "BE", "834") { Stupidedi::Guides::FiftyTen::X220::BE834  }
           x.register("005010X221",   "HP", "835") { Stupidedi::Guides::FiftyTen::X221::HP835  }
           x.register("005010X222",   "HC", "837") { Stupidedi::Guides::FiftyTen::X222::HC837P }
+          x.register("005010X223",   "HC", "837") { Stupidedi::Guides::FiftyTen::X223::HC837I }
           x.register("005010X231",   "FA", "999") { Stupidedi::Guides::FiftyTen::X231::FA999  }
           x.register("005010X220A1", "BE", "834") { Stupidedi::Guides::FiftyTen::X220A1::BE834  }
           x.register("005010X221A1", "HP", "835") { Stupidedi::Guides::FiftyTen::X221A1::HP835  }
@@ -131,6 +132,7 @@ module Stupidedi
           x.register("004010", "SW", "945") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::SW945 }
           x.register("004010", "SM", "204") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::SM204 }
           x.register("004010", "QM", "214") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::QM214 }
+          x.register("004010", "IM", "210") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::IM210 }
           x.register("004010", "GF", "990") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::GF990 }
           x.register("004010", "SS", "862") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::SS862 }
           x.register("004010", "PS", "830") { Stupidedi::Contrib::FortyTen::TransactionSetDefs::PS830 }
