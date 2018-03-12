@@ -290,8 +290,9 @@ module Stupidedi
                 minute = object.to_s.slice(2, 2).try{|mm| mm.to_i unless mm.blank? }
                 second = object.to_s.slice(4, 2).try{|ss| ss.to_d unless ss.blank? }
 
-                decimal = object.to_s.slice(6..-1)
-                second += "0.#{decimal}".to_d unless decimal.empty?
+                if decimal = object.to_s.slice(6..-1)
+                  second += "0.#{decimal}".to_d unless decimal.empty?
+                end
 
                 self::NonEmpty.new(hour, minute, second, usage, position)
 
