@@ -2476,7 +2476,7 @@ module Stupidedi
                   b::Element(e::Required,    "Payer Address Line"),
                   b::Element(e::Situational, "Payer Address Line")),
                 b::Segment(300, s::N4, "Payer City, State, ZIP Code",
-                  r::Required, d::RepeatCount.bounded(1),
+                  r::Situational, d::RepeatCount.bounded(1),
                   b::Element(e::Required,    "Payer City Name"),
                   b::Element(e::Situational, "Payer State Code"),
                   b::Element(e::Situational, "Payer Postal Zone or ZIP Code"),
